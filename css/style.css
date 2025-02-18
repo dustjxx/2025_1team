@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* common */
+
+h1 {
+  font-size: 48px;
+  /* line-height: 150%; */
+  color: rgb(17, 21, 24);
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+  /* font-weight: 700; */
+  /* margin-top: 1.8rem; * 홈페이지에서 확인한 값이긴 한데 일단 주석해놓고 코딩하면서 배치해보는걸로.../ 
+  /* line-height: 150%; */
+}
+
+h4 {
+  color: rgb(17, 21, 24);
+  font-size: 16px;
+  line-height: 100%;
+}
+
+body {
+  font-family: "Spoqa Han Sans Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+/* shinhan-blue color : rgb(53, 108, 255); */
+
+.menu {
+}
+p.title {
+}
+p.content {
+}
+
+/* style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+/* ha */
+
+/* lee */
+
+/* ko */
