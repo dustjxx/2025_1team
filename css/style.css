@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-/* common */
+/* common 글자 크기 */
 
 h1 {
   font-size: 48px;
-  /* line-height: 150%; */
+  line-height: 150%;
   color: rgb(17, 21, 24);
 }
 
@@ -14,9 +14,9 @@ h2 {
 
 h3 {
   font-size: 24px;
-  /* font-weight: 700; */
-  /* margin-top: 1.8rem; * 홈페이지에서 확인한 값이긴 한데 일단 주석해놓고 코딩하면서 배치해보는걸로.../ 
-  /* line-height: 150%; */
+  font-weight: 700;
+  /* margin-top: 1.8rem; */
+  line-height: 150%;
 }
 
 h4 {
@@ -26,19 +26,17 @@ h4 {
 }
 
 body {
-  font-family: "Spoqa Han Sans Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-family: "Spoqa Han Sans Neo", "Noto Sans KR", "Malgun Gothic", sans-serif !important;
+  /* 폰트 강제 적용 */
+  /* line-height: 1.5; */
+  font-size: 1rem;
+  overflow-x: hidden;
+  letter-spacing: -0.5px;
 }
 
 /* shinhan-blue color : rgb(53, 108, 255); */
 
-.menu {
-}
-p.title {
-}
-p.content {
-}
-
-/* style */
+/* style 기본 세팅 */
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +47,134 @@ li {
   list-style: none;
 }
 
+li a {
+  align-items: center;
+  height: 8rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: rgb(17, 21, 24);
+}
+
 /* ha */
+
+.hd {
+  /* 브랜드 로고 부분 */
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.logo {
+  /* 오른쪽 최상단 로그인메뉴 */
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.logo img {
+  /* 브랜드 로고 이미지 크기 */
+  height: 35px;
+  width: auto;
+}
+
+.databada {
+  /* 로그인 메뉴 데이터바다 버튼 */
+  background-color: rgb(53, 108, 255);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  margin-right: 0;
+}
+
+.hd_login {
+  /* 로그인 메뉴 오른쪽 정렬 */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  height: 80px;
+}
+
+.login {
+  /* 로그인 메뉴 세로 센터 정렬 */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.login li a {
+  /* 로그인 메뉴 글자 크기 */
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hd_login,
+.hd {
+  /* 데이터바다 버튼 오른쪽 정렬 */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.menu > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sv_menu {
+  /* 서비스 메뉴 */
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.all_header {
+  /* background-color: palevioletred; */
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0.4rem;
+  justify-content: center;
+  position: relative;
+}
+
+.util {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.util img {
+  height: 30px;
+  width: auto;
+}
+
+@media (max-width: 960px) {
+  .sv_menu,
+  .login,
+  .databada {
+    display: none !important;
+  }
+}
 
 /* lee */
 .shinhan-bg {
