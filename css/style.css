@@ -53,7 +53,7 @@ li {
 
 li a {
   align-items: center;
-  height: 8rem;
+  /* height: 8rem; */
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -69,7 +69,7 @@ a:visited {
 .hd {
   /* 브랜드 로고 부분 */
   width: 100%;
-  max-width: 120rem;
+  /* max-width: 120rem; */
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -147,9 +147,49 @@ a:visited {
   display: flex;
   align-items: center;
   gap: 40px;
-  height: 100%;
+  /* height: 100%; */
   padding: 0;
   margin: 0;
+}
+
+.sv_menu li {
+  /* 드롭다운 위치 조정 */
+  position: relative;
+}
+
+.sv_menu a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  padding: 10px 15px;
+  display: block;
+}
+
+/* 드롭다운 메뉴 스타일 */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  width: 1440px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.dropdown-menu a {
+  padding: 12px;
+  display: block;
+  color: black;
+  font-size: 14px;
+  /* transition: background 0.2s; */
+}
+
+/* 드롭다운 메뉴 활성화 */
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 .all_header {
@@ -178,6 +218,10 @@ a:visited {
   .databada {
     display: none !important;
   }
+}
+
+.dmenu {
+  display: flex;
 }
 
 /* lee */
