@@ -19,6 +19,10 @@ h3 {
   line-height: 150%;
 }
 
+h3.card {
+  font-size: 2rem;
+}
+
 h4 {
   color: rgb(17, 21, 24);
   font-size: 16px;
@@ -177,11 +181,19 @@ a:visited {
 }
 
 /* lee */
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 0.1;
+}
+
+.hashtag {
+  font-size: 16px;
+}
+
 .shinhan-bg {
   background-color: #356cff !important;
 }
 /* 이거 공용으로 쓰면 좋을 것 같아요 */
-
 .cardFont {
   font-weight: bold;
 }
@@ -190,34 +202,97 @@ a:visited {
   font-size: 18px;
 }
 
+.w-50 {
+  width: 220px;
+}
+.service .imgIcon {
+  width: 120px;
+}
+
+.search .searchIcon {
+  width: 32px;
+}
+
 /* 20px 24px 18px */
 @media (max-width: 1399px) {
+  .searFont {
+    font-size: 18px;
+    color: #cccccc !important;
+  }
 }
 
 @media (max-width: 1199px) {
+  .searFont {
+    font-size: 18px;
+  }
+
   .cardFont2 {
     font-size: 16px;
   }
   /* 18px 22px 16px */
 }
 
-@media (max-width: 960x) {
+@media (max-width: 960px) {
+  .input-group {
+    height: 48px;
+  }
+
+  .searFont {
+    font-size: 16px;
+  }
+
+  .hashtag {
+    font-size: 14px;
+  }
+
   .cardFont2 {
     font-size: 11px;
   }
   /* 폰트 만들어달라고 요청하기 */
+
+  .service .imgIcon {
+    width: 32%;
+  }
+
+  .search .searchIcon {
+    width: 30%;
+  }
 }
 
 @media (max-width: 767px) {
+  .hashtag {
+    font-size: 14px;
+  }
+
   .cardFont2 {
     font-size: 11px;
+  }
+
+  .service .imgIcon {
+    width: 35%;
+  }
+
+  .search .searchIcon {
+    width: 24px;
   }
 }
 
 @media (max-width: 575px) {
+  .hashtag {
+    font-size: 14px;
+  }
+
   .cardFont2 {
     font-size: 11px;
   }
   /* 14px, 16px 11px */
+  .service .imgIcon {
+    width: 35%;
+  }
+
+  .search .searchIcon {
+    width: 24px;
+  }
 }
+
 /* ko */
