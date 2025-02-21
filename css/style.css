@@ -340,3 +340,183 @@ a:visited {
 }
 
 /* ko */
+
+/************** 공통처리되면 좋을 것들 END **************/
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+/************** 공통처리되면 좋을 것들 END **************/
+
+/************** SWIPER Start **************/
+
+.main-slide-Wraper {
+  margin: 0;
+  padding: 0;
+  /* width: 800px;
+  height: 600px; */
+}
+
+.swiper {
+  width: 95%;
+  height: 95%;
+}
+
+.swiper-slide {
+  padding: 20px;
+
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-slide-Wraper .back {
+  background: rgb(232, 233, 236);
+  background-position: right;
+  border-radius: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main-slide-Wraper .back:nth-of-type(1) {
+  background-image: url(../image/header1.png);
+}
+.main-slide-Wraper .back:nth-of-type(2) {
+  background-image: url(../image/header2.png);
+}
+
+/************** SWIPER END **************/
+
+/*
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+*/
+.main-wrap .visual-layout-area .my-login-wrap .notice-box {
+  margin-top: 20px;
+}
+
+.visual-layout-area * {
+  /* border: 1px dotted red; */
+}
+
+.r-card-body {
+  background: #f7f8fc;
+  width: 100%;
+  height: 100%;
+}
+
+.visual-layout-area {
+  padding: 20px;
+  margin: 20px;
+}
+
+.swiper mySwiper {
+  padding: 100px;
+}
+
+.main-wording {
+  font-size: 34px;
+  /* font-weight: bolder; */
+  font-weight: 400;
+  font-family: Spoqa Han Sans Neo, Noto Sans KR, Malgun Gothic, 맑은 고딕, 돋움,
+    dotum, Apple SD Gothic Neo, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
+  color: #111518;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.indicator-wrap {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
+
+.main-right-box {
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.outlogin-box {
+  padding: 20px;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.notice-banner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #cee2ff;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.report-roll-box {
+  width: 100%;
+}
+
+.main-login-photo {
+  width: 46px;
+  height: 46px;
+}
+
+/* 아래쪽 숨겨진 로그인 버튼과 이름 구분 필요*/
+
+.btn-rlogin {
+  width: 90%;
+  height: 48px;
+  padding: 0 12px;
+  font-weight: bolder;
+  border-radius: 10px;
+  background-color: #356cff;
+  color: #fff;
+}
+
+.report-roll-box {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-title {
+  font-size: 10px;
+  color: #153b75;
+  font-weight: 700;
+}
+
+.r-card-title {
+  margin-top: 0.8rem;
+  color: #383b5a;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: -0.45%;
+}
+
+.r-card-flag {
+  background: #111518;
+  color: white;
+  border-radius: 5px 5px 0 0;
+  font-weight: bolder;
+  font-size: 13.5px;
+  padding: 3px 13px 3px 13px;
+}
+
+.swiper-slide .text {
+  font-size: 17px;
+  color: #111518;
+  font-weight: bold;
+}
+.swiper-slide .date {
+  color: #666666;
+  font-size: 13.5px;
+}
