@@ -19,10 +19,6 @@ h3 {
   line-height: 150%;
 }
 
-h3.card {
-  font-size: 2rem;
-}
-
 h4 {
   color: rgb(17, 21, 24);
   font-size: 16px;
@@ -224,22 +220,36 @@ a:visited {
   display: flex;
 }
 
+/* ko */
+
 /* lee */
+.shinhan-bg {
+  background-color: #356cff !important;
+}
+
 .form-control::placeholder {
   color: #6c757d;
   opacity: 0.1;
 }
 
-.hashtag {
+.search .hashtag {
   font-size: 16px;
 }
 
-.shinhan-bg {
-  background-color: #356cff !important;
+.search .searchIcon {
+  width: 32px;
 }
-/* 이거 공용으로 쓰면 좋을 것 같아요 */
-.cardFont {
-  font-weight: bold;
+
+.service .card-stit {
+  font-size: 20px;
+}
+
+.service .card-title {
+  font-size: 24px;
+}
+
+.service .span20 {
+  font-size: 20px;
 }
 
 .cardFont2 {
@@ -253,15 +263,10 @@ a:visited {
   width: 120px;
 }
 
-.search .searchIcon {
-  width: 32px;
-}
-
 /* 20px 24px 18px */
 @media (max-width: 1399px) {
-  .searFont {
-    font-size: 18px;
-    color: #cccccc !important;
+  .h3-card {
+    font-size: 20px;
   }
 }
 
@@ -301,6 +306,10 @@ a:visited {
   .search .searchIcon {
     width: 30%;
   }
+
+  .service .card-stit {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -319,9 +328,17 @@ a:visited {
   .search .searchIcon {
     width: 24px;
   }
+
+  .service .card-stit {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575px) {
+  h3.card {
+    font-size: 14px;
+  }
+
   .hashtag {
     font-size: 14px;
   }
@@ -338,5 +355,3 @@ a:visited {
     width: 24px;
   }
 }
-
-/* ko */
