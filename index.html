@@ -130,33 +130,78 @@
 
     <!-- 이서진 seojjin1220@naver.com -->
     <div>
-      <div class="container shinhan-bg py-4 mb-4 rounded-5">
+      <div class="search container shinhan-bg py-3 py-md-4 mb-4 rounded-4">
         <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="input-group">
-              <input
-                type="search"
-                class="form-control rounded-start-5 ps-4"
-                placeholder="상품명, 해시태그"
-                aria-label="Search"
-                aria-describedby="search-addon"
-              />
-              <span class="input-group-text bg-white border-0 rounded-end-5">
-                <img src="image/search.png" alt="" />
-                <!-- 이미지 추가한거 옳려야됨 -->
-              </span>
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-10 col-lg-8">
+                <div class="input-group">
+                  <input
+                    type="search"
+                    id="searchInput"
+                    class="form-control rounded-start-5 ps-3 ps-md-4 py-2 py-md-2 border-white fw-medium searFont"
+                    placeholder="상품명, 해시태그"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+                  />
+                  <span
+                    class="input-group-text bg-white border border-white rounded-end-5 py-2 py-md-3"
+                  >
+                    <img
+                      src="image/search.png"
+                      alt="검색 아이콘"
+                      class="w-50 img-fluid searchIcon"
+                    />
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
 
-          <p class="text-white text-center mb-0 mt-4">
-            #상품분석 #개인사업자 #특화업종 #부동산 #모니터링
+          <p
+            class="text-white text-center mb-0 mt-3 mt-md-4 d-flex justify-content-center flex-wrap gap-2 gap-md-3"
+          >
+            <span
+              class="hashtag fw-medium text-small text-md-base"
+              data-text="상권분석"
+              >#상권분석</span
+            >
+            <span
+              class="hashtag fw-medium text-small text-md-base"
+              data-text="개인사업자"
+              >#개인사업자</span
+            >
+            <span
+              class="hashtag fw-medium text-small text-md-base"
+              data-text="특화업종"
+              >#특화업종</span
+            >
+            <span
+              class="hashtag fw-medium text-small text-md-base"
+              data-text="부동산"
+              >#부동산</span
+            >
+            <span
+              class="hashtag fw-medium text-small text-md-base"
+              data-text="모니터링"
+              >#모니터링</span
+            >
           </p>
-          <!-- 16px 스포카 한산네오 -->
         </div>
       </div>
+
+      <script>
+        document.querySelectorAll(".hashtag").forEach(function (element) {
+          element.addEventListener("click", function () {
+            document.getElementById("searchInput").value =
+              element.getAttribute("data-text")
+          })
+        })
+      </script>
+
       <!-- 검색창 -->
 
-      <div class="bg-body-tertiary py-5">
+      <div class="bg-body-tertiary service py-5">
         <div class="container py-5">
           <div class="row">
             <div class="col-6 col-md-6 col-lg-3">
@@ -164,19 +209,26 @@
                 <div class="card bg-white rounded-5 border-body">
                   <div class="card_main">
                     <div class="p-4">
-                      <h3>
-                        다양한 ><br />
-                        <span class="">Data서비스</span>
-                      </h3>
+                      <div>
+                        <div>
+                          <h3.card>다양한</h3.card>
+                          <img
+                            src="image/header_up.png"
+                            alt=""
+                            class="cardImg"
+                          />
+                        </div>
+                        <span class="tw-bold fs-4 cardFont">Data서비스</span>
+                      </div>
                       <!-- 20px 24px 온신한-->
                       <!-- 스판에 볼드랑 24px -->
                       <!-- a:liked 데코 빼기 -->
                       <img
                         src="image/header4.png"
                         alt=""
-                        class="d-block m-auto w-50 my-3 my-md-5"
+                        class="imgIcon d-block m-auto my-3 my-md-5"
                       />
-                      <button class="border-0 rounded-5 w-100 cardFont2">
+                      <button class="border-0 rounded-5 w-100 cardFont2 py-2">
                         Data One-Stop Service
                       </button>
                       <!-- card-text, 18px, 스포카 한산스네오 -->
@@ -190,18 +242,18 @@
                 <div class="card bg-white rounded-5 border-body">
                   <div class="card_main">
                     <div class="p-4">
-                      <h3>
-                        혁신적인 ><br />
-                        <span class="">솔루션서비스</span>
-                      </h3>
+                      <h3.card>
+                        혁신적인<br />
+                        <span class="tw-bold fs-4 cardFont">솔루션서비스</span>
+                      </h3.card>
                       <!-- 20px 24px 온신한 +a:liked 데코 빼기-->
                       <!-- 스판에 볼드랑 24px -->
                       <img
                         src="image/header5.png"
                         alt=""
-                        class="d-block m-auto w-50 my-3 my-md-5"
+                        class="imgIcon d-block m-auto my-3 my-md-5"
                       />
-                      <button class="border-0 rounded-5 w-100 cardFont2">
+                      <button class="border-0 rounded-5 w-100 cardFont2 py-2">
                         상권분석, 시장 모니터링
                       </button>
                       <!-- card-text, 18px, 스포카 한산스네오 -->
@@ -215,18 +267,18 @@
                 <div class="card bg-white rounded-5 border-body">
                   <div class="card_main">
                     <div class="p-4">
-                      <h3>
-                        스마트한 ><br />
-                        <span class="">광고서비스</span>
-                      </h3>
+                      <h3.card>
+                        스마트한<br />
+                        <span class="tw-bold fs-4 cardFont">광고서비스</span>
+                      </h3.card>
                       <!-- 20px 24px 온신한 +a:liked 데코 빼기-->
                       <!-- 스판에 볼드랑 24px -->
                       <img
                         src="image/header6.png"
                         alt=""
-                        class="d-block m-auto w-50 my-3 my-md-5"
+                        class="imgIcon d-block m-auto my-3 my-md-5"
                       />
-                      <button class="border-0 rounded-5 w-100 cardFont2">
+                      <button class="border-0 rounded-5 w-100 cardFont2 py-2">
                         최적의 고객 타켓팅
                       </button>
                       <!-- card-text, 18px, 스포카 한산스네오 -->
@@ -240,18 +292,18 @@
                 <div class="card bg-white rounded-5 border-body">
                   <div class="card_main">
                     <div class="p-4">
-                      <h3>
-                        탁월한 ><br />
-                        <span class="">API서비스</span>
-                      </h3>
+                      <h3.card>
+                        탁월한<br />
+                        <span class="tw-bold fs-4 cardFont">API서비스</span>
+                      </h3.card>
                       <!-- 20px 24px 온신한 +a:liked 데코 빼기-->
                       <!-- 스판에 볼드랑 24px -->
                       <img
                         src="image/header7.png"
                         alt=""
-                        class="d-block m-auto w-50 my-3 my-md-5"
+                        class="imgIcon d-block m-auto my-3 my-md-5"
                       />
-                      <button class="border-0 rounded-5 w-100 cardFont2">
+                      <button class="border-0 rounded-5 w-100 cardFont2 py-2">
                         Data 실시간 활용
                       </button>
                       <!-- card-text, 18px, 스포카 한산스네오 -->
