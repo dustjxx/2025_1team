@@ -425,6 +425,7 @@ a:visited {
 
 .service .card-title {
   font-size: 24px;
+  font-weight: 500;
 }
 
 .service .span20 {
@@ -442,10 +443,18 @@ a:visited {
   width: 120px;
 }
 
+.service .upIcon {
+  width: 16px;
+  transform: rotate(90deg);
+}
+
 /* 20px 24px 18px */
-@media (max-width: 1399px) {
-  .h3-card {
-    font-size: 20px;
+@media (max-width: 1920px) {
+  .service .card:hover {
+    transform: translateY(-30px); /* 위로 5px 이동 */
+    border: 1px solid #356cff; /* 파란색 테두리 추가 */
+    box-shadow: 0 10px 10px #13265914; /* 파란색 그림자 효과 */
+    transition: all 0.2s ease-in-out; /* 부드러운 전환 효과 */
   }
 }
 
@@ -461,6 +470,12 @@ a:visited {
 }
 
 @media (max-width: 960px) {
+  .search .form-control {
+    padding-top: 0;
+  }
+  .search .input-group-text {
+    padding-top: 0;
+  }
   .input-group {
     height: 48px;
   }
@@ -469,7 +484,7 @@ a:visited {
     font-size: 16px;
   }
 
-  .hashtag {
+  .search .hashtag {
     font-size: 14px;
   }
 
@@ -479,7 +494,7 @@ a:visited {
   /* 폰트 만들어달라고 요청하기 */
 
   .service .imgIcon {
-    width: 32%;
+    width: 20%;
   }
 
   .search .searchIcon {
@@ -487,12 +502,39 @@ a:visited {
   }
 
   .service .card-stit {
-    font-size: 10px;
+    font-size: 14px;
+  }
+
+  .service .card-title {
+    font-size: 16px;
+  }
+
+  .login2 .login2Img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .login2 span {
+    font-size: 14px;
+  }
+
+  .login2 .btn-rlogin {
+    height: 40px;
+  }
+
+  .flag2 .notice-banner span.r-card-title {
+    font-size: 18px;
+  }
+
+  .service .card:hover {
+    transform: none;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    box-shadow: none;
   }
 }
 
-@media (max-width: 767px) {
-  .hashtag {
+@media (max-width: 768px) {
+  .search .hashtag {
     font-size: 14px;
   }
 
@@ -501,7 +543,7 @@ a:visited {
   }
 
   .service .imgIcon {
-    width: 35%;
+    width: 20%;
   }
 
   .search .searchIcon {
@@ -511,14 +553,16 @@ a:visited {
   .service .card-stit {
     font-size: 14px;
   }
+
+  .service .card:hover {
+    transform: none;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    box-shadow: none;
+  }
 }
 
 @media (max-width: 575px) {
-  h3.card {
-    font-size: 14px;
-  }
-
-  .hashtag {
+  .search .hashtag {
     font-size: 14px;
   }
 
@@ -527,10 +571,24 @@ a:visited {
   }
   /* 14px, 16px 11px */
   .service .imgIcon {
-    width: 35%;
+    width: 37%;
   }
 
   .search .searchIcon {
     width: 24px;
+  }
+
+  .service .card-title {
+    font-size: 14px;
+  }
+
+  .service .card-title {
+    font-size: 16px;
+  }
+
+  .service .card:hover {
+    transform: none;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    box-shadow: none;
   }
 }
