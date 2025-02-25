@@ -185,6 +185,9 @@
                 </div> -->
                 </div>
               </div>
+              <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+              <div class="swiper-pagination"></div>
             </div>
           </div>
           <div class="col col-lg-3 col-sm-12 main-right-box">
@@ -195,7 +198,7 @@
                 ><img src="./image/header_profile.png"
               /></span>
               <p class="login-txt">
-                로그인 후<br />나만의 맞춤 정보를 이용하세요.
+                로그인 후1<br />나만의 맞춤 정보를 이용하세요.
               </p>
               <button type="button" class="btn-rlogin">
                 <span>로그인</span>
@@ -213,10 +216,11 @@
               </div>
 
               <div class="report-roll-box">
-                <div
+                <!-- <div
                   class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden"
                   style="text-align: center !important"
-                >
+                > -->
+                <div class="swiper rightSwiper">
                   <div
                     class="swiper-wrapper right-card"
                     style="
@@ -228,7 +232,6 @@
                     <div
                       class="swiper-slide swiper-slide-next r-card-body"
                       data-swiper-slide-index="0"
-                      style="width: 234px; margin-right: 24px"
                     >
                       <div class="r-card-flag">Trend Report</div>
                       <a href="javascript:;">
@@ -241,7 +244,6 @@
                     <div
                       class="swiper-slide swiper-slide-prev r-card-body"
                       data-swiper-slide-index="1"
-                      style="width: 234px; margin-right: 24px"
                     >
                       <span class="r-card-flag">Study Case</span>
                       <a href="javascript:;">
@@ -254,7 +256,6 @@
                     <div
                       class="swiper-slide swiper-slide-active r-card-body"
                       data-swiper-slide-index="2"
-                      style="width: 234px; margin-right: 24px"
                     >
                       <span class="r-card-flag">Study Case</span>
                       <a href="javascript:;">
@@ -286,8 +287,53 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <!-- Initialize Swiper -->
+
         <script>
-          var swiper = new Swiper(".mySwiper", {})
+          rightSwiper
+        </script>
+
+        <script>
+          // var swiper = new Swiper(".rightSwiper", {})
+          var swiper = new Swiper(".rightSwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            /*
+navigation: {
+nextEl: ".swiper-button-next",
+prevEl: ".swiper-button-prev",
+}, 
+*/
+          })
+        </script>
+
+        <script>
+          // var swiper = new Swiper(".mySwiper", {})
+          var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            /*
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }, 
+    */
+          })
         </script>
       </div>
     </div>
