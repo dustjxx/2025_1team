@@ -136,11 +136,12 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .sv_menu {
   /* 서비스 메뉴 */
-  display: flex;
+  /* display: flex; */
   align-items: center;
   gap: 40px;
   /* height: 100%; */
@@ -149,7 +150,6 @@ a:visited {
 }
 
 .sv_menu li {
-  /* 드롭다운 위치 조정 */
   position: relative;
 }
 
@@ -162,30 +162,40 @@ a:visited {
   display: block;
 }
 
-/* 드롭다운 메뉴 스타일 */
 .dropdown-menu {
-  display: none;
+  display: block;
   position: absolute;
   top: 100%;
   left: 0;
   background: white;
   border: 1px solid #ddd;
-  width: 1440px;
+  width: auto;
+  text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
 
 .dropdown-menu a {
   padding: 12px;
-  display: block;
+  text-align: center;
   color: black;
   font-size: 14px;
   /* transition: background 0.2s; */
 }
 
-/* 드롭다운 메뉴 활성화 */
 .dropdown:hover .dropdown-menu {
   display: block;
+  text-align: center;
+}
+
+.dropdown-menu ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.dropdown-menu ul li {
+  display: inline-block;
 }
 
 .all_header {
@@ -208,7 +218,12 @@ a:visited {
   width: auto;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 994px) {
+  .sv_menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .sv_menu,
   .login,
   .databada {
