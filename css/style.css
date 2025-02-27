@@ -449,6 +449,11 @@ a:visited {
   width: 32px;
 }
 
+.login2,
+.flag2 {
+  display: none;
+}
+
 .service .card-stit {
   font-size: 20px;
 }
@@ -481,10 +486,10 @@ a:visited {
 /* 20px 24px 18px */
 @media (max-width: 1920px) {
   .service .card:hover {
-    transform: translateY(-30px); /* 위로 5px 이동 */
-    border: 1px solid #356cff; /* 파란색 테두리 추가 */
-    box-shadow: 0 10px 10px #13265914; /* 파란색 그림자 효과 */
-    transition: all 0.2s ease-in-out; /* 부드러운 전환 효과 */
+    transform: translateY(-30px);
+    border: 1px solid #356cff;
+    box-shadow: 0 10px 10px #13265914;
+    transition: all 0.2s ease-in-out;
   }
 }
 
@@ -500,6 +505,10 @@ a:visited {
 }
 
 @media (max-width: 960px) {
+  .main-right-box {
+    display: none;
+  }
+
   .search .form-control {
     padding-top: 0;
   }
@@ -514,6 +523,10 @@ a:visited {
     font-size: 16px;
   }
 
+  .notice-graph2 .notice-img2 {
+    width: 50px;
+  }
+
   .search .hashtag {
     font-size: 14px;
   }
@@ -523,14 +536,44 @@ a:visited {
   }
   /* 폰트 만들어달라고 요청하기 */
 
-  .service .imgIcon {
-    width: 20%;
-  }
-
   .search .searchIcon {
     width: 30%;
   }
 
+  .login2,
+  .flag2 {
+    display: block;
+  }
+
+  .flag2 .notice-banner2 {
+    margin-top: 30px;
+    padding: 0px 20px 0px 0px;
+    background-color: #cee2ff;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 18%;
+  }
+
+  .flag2 .category-title2 {
+    font-size: 12px;
+    color: #153b75;
+    margin-bottom: 10px;
+  }
+
+  .flag2 .r-card-title2 {
+    margin-top: 0.8rem;
+    color: #383b5a;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -0.45%;
+  }
+
+  .service .imgIcon {
+    width: 20%;
+  }
   .service .card-stit {
     font-size: 14px;
   }
