@@ -61,8 +61,8 @@
             <ul class="sv_menu">
               <li class="dropdown">
                 <a href="#">Data서비스</a>
-                <div class="dropdown-menu">
-                  <ul>
+                <div>
+                  <ul class="dropdown-menu">
                     <li>
                       <a href="#">Data상품</a>
                       <a href="#">맞춤Data</a>
@@ -72,28 +72,38 @@
               </li>
               <li class="dropdown">
                 <a href="#">솔루션서비스</a>
-                <div class="dropdown-menu">
-                  <a href="#">솔루션상품</a>
+                <div>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">솔루션상품</a></li>
+                  </ul>
                 </div>
               </li>
               <li class="dropdown">
                 <a href="#">광고서비스</a>
-                <div class="dropdown-menu">
-                  <a href="#">타겟마케팅</a>
-                  <a href="#">모바일서베이</a>
-                  <a href="#">SOL페이배너광고</a>
+                <div>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#">타겟마케팅</a>
+                      <a href="#">모바일서베이</a>
+                      <a href="#">SOL페이배너광고</a>
+                    </li>
+                  </ul>
                 </div>
               </li>
               <li class="dropdown">
                 <a href="#">API서비스</a>
-                <div class="dropdown-menu">
-                  <a href="#">API상품</a>
+                <div>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#">API상품</a>
+                    </li>
+                  </ul>
                 </div>
               </li>
               <li class="dropdown">
                 <a href="#">커뮤니티</a>
-                <div class="dropdown-menu">
-                  <ul>
+                <div>
+                  <ul class="dropdown-menu">
                     <li>
                       <a href="#">활용장</a>
                       <a href="#">토론장</a>
@@ -121,7 +131,7 @@
           >
             <div class="swiper mySwiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide back slide-01">
+                <div class="swiper-slide slide-01">
                   <p class="main-wording">
                     소비 Data 속<br />숨겨진 Trend를<br />확인하세요
                   </p>
@@ -129,18 +139,16 @@
                     <p>활용장 바로가기</p>
                   </div>
                   <div class="indicator-wrap">
-                    <div class="page-arrow">
-                      <span>1</span> / <span>2</span>
-                    </div>
+                    <div class="page-nav"><span>1</span> / <span>2</span></div>
                     <button class="btn-main-prev" type="button">
-                      <span class="sr-only">이전</span>
+                      <span class="sr-only">←</span>
                     </button>
                     <button class="btn-main-next" type="button">
-                      <span class="sr-only">다음</span>
+                      <span class="sr-only">→</span>
                     </button>
                   </div>
                 </div>
-                <div class="swiper-slide back slide-02">
+                <div class="swiper-slide slide-02">
                   <p class="main-wording">
                     데이터의 Bada에서<br /><span>무한한 인사이트를</span
                     ><br /><span>발견하세요</span>
@@ -149,14 +157,12 @@
                     <p>DataBada 바로가기</p>
                   </div>
                   <div class="indicator-wrap">
-                    <div class="page-arrow">
-                      <span>1</span> / <span>2</span>
-                    </div>
+                    <div class="page-nav"><span>1</span> / <span>2</span></div>
                     <button class="btn-main-prev" type="button">
-                      <span class="sr-only">이전</span>
+                      <span class="sr-only">←</span>
                     </button>
                     <button class="btn-main-next" type="button">
-                      <span class="sr-only">다음</span>
+                      <span class="sr-only">→</span>
                     </button>
                   </div>
                   <!-- <div class="indicator-wrap">
@@ -168,6 +174,9 @@
                 </div> -->
                 </div>
               </div>
+              <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+              <div class="swiper-pagination"></div>
             </div>
           </div>
           <div class="col col-lg-3 col-sm-12 main-right-box">
@@ -175,10 +184,10 @@
               <!--로그인 박스 -->
               <!-- <div class="login-box"> -->
               <span class="main-login-photo"
-                ><img src="./image/header_profile.png" width="64" height="64"
+                ><img src="./image/header_profile.png"
               /></span>
               <p class="login-txt">
-                로그인 후<br />나만의 맞춤 정보를 이용하세요.
+                로그인 후1<br />나만의 맞춤 정보를 이용하세요.
               </p>
               <button type="button" class="btn-rlogin">
                 <span>로그인</span>
@@ -193,17 +202,14 @@
                   <div class="category-title">데이터바다 활용장</div>
                   <div class="r-card-title">데이터 활용 성공 노하우</div>
                 </div>
-                <div class="notice-graph">
-                  <img src="./image/header3.png" alt="" />
-                  <!-- <i class="icon-data-graph mdi v-icon notranslate v-theme--DefaultTheme v-icon--size-default" aria-hidden="true"></i> -->
-                </div>
               </div>
 
               <div class="report-roll-box">
-                <div
+                <!-- <div
                   class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden"
                   style="text-align: center !important"
-                >
+                > -->
+                <div class="swiper rightSwiper">
                   <div
                     class="swiper-wrapper right-card"
                     style="
@@ -215,7 +221,6 @@
                     <div
                       class="swiper-slide swiper-slide-next r-card-body"
                       data-swiper-slide-index="0"
-                      style="width: 234px; margin-right: 24px"
                     >
                       <div class="r-card-flag">Trend Report</div>
                       <a href="javascript:;">
@@ -228,7 +233,6 @@
                     <div
                       class="swiper-slide swiper-slide-prev r-card-body"
                       data-swiper-slide-index="1"
-                      style="width: 234px; margin-right: 24px"
                     >
                       <span class="r-card-flag">Study Case</span>
                       <a href="javascript:;">
@@ -241,7 +245,6 @@
                     <div
                       class="swiper-slide swiper-slide-active r-card-body"
                       data-swiper-slide-index="2"
-                      style="width: 234px; margin-right: 24px"
                     >
                       <span class="r-card-flag">Study Case</span>
                       <a href="javascript:;">
@@ -273,8 +276,53 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <!-- Initialize Swiper -->
+
         <script>
-          var swiper = new Swiper(".mySwiper", {})
+          rightSwiper
+        </script>
+
+        <script>
+          // var swiper = new Swiper(".rightSwiper", {})
+          var swiper = new Swiper(".rightSwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            /*
+navigation: {
+nextEl: ".swiper-button-next",
+prevEl: ".swiper-button-prev",
+}, 
+*/
+          })
+        </script>
+
+        <script>
+          // var swiper = new Swiper(".mySwiper", {})
+          var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            /*
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }, 
+    */
+          })
         </script>
       </div>
     </div>
@@ -282,7 +330,9 @@
     <!-- 이서진 seojjin1220@naver.com -->
     <div>
       <div class="px-4">
-        <div class="search container shinhan-bg py-3 py-md-4 mb-4 rounded-4">
+        <div
+          class="search container shinhan-bg py-3 py-md-2 py-md-4 mb-4 rounded-4"
+        >
           <div class="row justify-content-center">
             <div class="container-fluid">
               <div class="row justify-content-center">
@@ -354,6 +404,100 @@
       </script>
 
       <!-- 검색창 -->
+      <div class="px-4">
+        <div class="outlogin-box login2">
+          <!--로그인 박스 -->
+          <!-- <div class="login-box"> -->
+          <span class="main-login-photo"
+            ><img
+              src="./image/header_profile.png"
+              class="login2Img rounded mx-auto d-block"
+          /></span>
+          <p class="login-txt text-center pt-2">
+            로그인 후<br />나만의 맞춤 정보를 이용하세요.
+          </p>
+          <button
+            type="button"
+            class="btn-rlogin border-0 rounded-3 mx-auto d-block"
+          >
+            <span class="fw-medium">로그인</span>
+          </button>
+
+          <!-- </div> -->
+        </div>
+        <div class="notice-box flag2">
+          <!-- 슬라이드형 카드-->
+          <div class="notice-banner d-flex justify-content-between">
+            <div class="p-4">
+              <div class="category-title"><span>데이터바다 활용장</span></div>
+              <div>
+                <span class="r-card-title">데이터 활용 성공 노하우</span>
+              </div>
+            </div>
+            <div class="notice-graph">
+              <img src="./image/header3.png" alt="" />
+              <!-- <i class="icon-data-graph mdi v-icon notranslate v-theme--DefaultTheme v-icon--size-default" aria-hidden="true"></i> -->
+            </div>
+          </div>
+
+          <div class="report-roll-box">
+            <div
+              class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+              style="text-align: center !important"
+            >
+              <div
+                class="swiper-wrapper right-card"
+                style="
+                  transform: translate3d(-516px, 0px, 0px);
+                  transition-duration: 0ms;
+                  transition-delay: 0ms;
+                "
+              >
+                <div
+                  class="swiper-slide swiper-slide-next r-card-body"
+                  data-swiper-slide-index="0"
+                  style="width: 234px; margin-right: 24px"
+                >
+                  <div class="r-card-flag border-0 rounded-3">Trend Report</div>
+                  <a href="javascript:;">
+                    <p class="text">
+                      신한카드가 선정한 2025년 트렌드 키워드 'REVIVE'
+                    </p>
+                    <p class="date">2025.01.17</p>
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide swiper-slide-prev r-card-body"
+                  data-swiper-slide-index="1"
+                  style="width: 234px; margin-right: 24px"
+                >
+                  <span class="r-card-flag border-0 rounded-3">Study Case</span>
+                  <a href="javascript:;">
+                    <p class="text">
+                      카드 데이터로 분석해본 카페 업종 트렌드 리포트
+                    </p>
+                    <p class="date">2024.12.23</p>
+                  </a>
+                </div>
+                <div class="row swiper-slide swiper-slide-active r-card-body">
+                  <div class="r-card-flag p-2 border-0 rounded-3">
+                    <span class="text-center fw-medium">Study Case</span>
+                  </div>
+                  <div>
+                    <a href="javascript:;">
+                      <p class="text text-start">
+                        빵과 야구를 사랑하는, 대전 여행 테마소비 분석
+                      </p>
+                      <p class="date text-start">2024.12.09</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 로그인, 데이터바다 활용장2 -->
 
       <div class="bg-body-tertiary service py-5 px-3">
         <div class="container py-5">
@@ -369,7 +513,7 @@
                           <img
                             src="image/header_up.png"
                             alt=""
-                            class="cardImg"
+                            class="upIcon"
                           />
                         </div>
                         <span class="card-title">Data서비스</span>
@@ -396,10 +540,14 @@
                 <div class="card bg-white rounded-5 border-body">
                   <div class="card_main">
                     <div class="p-4">
-                      <span class="fs-5">
-                        혁신적인<br />
-                        <span class="fw-bold fs-4">솔루션서비스</span>
-                      </span>
+                      <span class="card-stit"> 혁신적인</span>
+                      <img
+                        src="image/header_up.png"
+                        alt=""
+                        class="upIcon"
+                      /><br />
+                      <span class="card-title">솔루션서비스</span>
+
                       <!-- 20px 24px 온신한 +a:liked 데코 빼기-->
                       <!-- 스판에 볼드랑 24px -->
                       <img
@@ -421,10 +569,14 @@
                 <div class="card bg-white rounded-5 border-body">
                   <div class="card_main">
                     <div class="p-4">
-                      <span class="fs-5">
-                        스마트한<br />
-                        <span class="fw-bold fs-4">광고서비스</span>
-                      </span>
+                      <span class="card-stit"> 스마트한</span>
+                      <img
+                        src="image/header_up.png"
+                        alt=""
+                        class="upIcon"
+                      /><br />
+                      <span class="card-title">광고서비스</span>
+
                       <!-- 20px 24px 온신한 +a:liked 데코 빼기-->
                       <!-- 스판에 볼드랑 24px -->
                       <img
@@ -446,10 +598,14 @@
                 <div class="card bg-white rounded-5 border-body">
                   <div class="card_main">
                     <div class="p-4">
-                      <span class="fs-5">
-                        탁월한<br />
-                        <span class="fw-bold fs-4">API서비스</span>
-                      </span>
+                      <span class="card-stit"> 탁월한</span>
+                      <img
+                        src="image/header_up.png"
+                        alt=""
+                        class="upIcon"
+                      /><br />
+                      <span class="card-title">API서비스</span>
+
                       <!-- 20px 24px 온신한 +a:liked 데코 빼기-->
                       <!-- 스판에 볼드랑 24px -->
                       <img
