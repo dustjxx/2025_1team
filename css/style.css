@@ -49,7 +49,6 @@ li {
 
 li a {
   align-items: center;
-  /* height: 8rem; */
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -65,7 +64,6 @@ a:visited {
 .hd {
   /* 브랜드 로고 부분 */
   width: 100%;
-  /* max-width: 120rem; */
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -136,22 +134,20 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .sv_menu {
   /* 서비스 메뉴 */
-  display: flex;
   align-items: center;
-  gap: 40px;
-  /* height: 100%; */
+  gap: 20px;
   padding: 0;
   margin: 0;
 }
 
-.sv_menu li {
-  /* 드롭다운 위치 조정 */
+/* .sv_menu li {
   position: relative;
-}
+} */
 
 .sv_menu a {
   text-decoration: none;
@@ -162,31 +158,47 @@ a:visited {
   display: block;
 }
 
-/* 드롭다운 메뉴 스타일 */
-.dropdown-menu {
-  display: none;
+/* .dropdown-menu {
+  display: block;
   position: absolute;
   top: 100%;
   left: 0;
   background: white;
   border: 1px solid #ddd;
-  width: 1440px;
+  width: auto;
+  text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 10;
-}
+} */
 
 .dropdown-menu a {
   padding: 12px;
-  display: block;
+  text-align: center;
   color: black;
   font-size: 14px;
-  /* transition: background 0.2s; */
+  transition: background 0.2s;
 }
 
-/* 드롭다운 메뉴 활성화 */
 .dropdown:hover .dropdown-menu {
   display: block;
+  text-align: center;
 }
+
+.dropdown-menu ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgb(53, 108, 255);
+  color: white;
+}
+
+/* .dropdown-menu:hover li a {
+  display: inline-block;
+  background-color: #d1d1d1;
+} */
 
 .all_header {
   /* background-color: palevioletred; */
@@ -208,7 +220,12 @@ a:visited {
   width: auto;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 990px) {
+  .sv_menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .sv_menu,
   .login,
   .databada {
